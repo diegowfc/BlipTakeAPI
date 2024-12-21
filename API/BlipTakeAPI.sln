@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlipTakeAPI", "BlipTakeAPI\BlipTakeAPI.csproj", "{1578AC4B-B0B4-4779-86A0-AFD8A2F92E7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{ED8252B0-9121-44EF-903C-D1F5B1877DEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1578AC4B-B0B4-4779-86A0-AFD8A2F92E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1578AC4B-B0B4-4779-86A0-AFD8A2F92E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1578AC4B-B0B4-4779-86A0-AFD8A2F92E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1578AC4B-B0B4-4779-86A0-AFD8A2F92E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED8252B0-9121-44EF-903C-D1F5B1877DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED8252B0-9121-44EF-903C-D1F5B1877DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED8252B0-9121-44EF-903C-D1F5B1877DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED8252B0-9121-44EF-903C-D1F5B1877DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
