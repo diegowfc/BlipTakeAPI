@@ -15,7 +15,7 @@ namespace BlipTakeAPI
 
             builder.Services.AddHttpClient();
 
-            builder.Services.AddScoped<IGetInformationUseCase, AccountService>();
+            builder.Services.AddScoped<IGetAccountInformationUseCase, AccountService>();
             builder.Services.AddAutoMapper(typeof(AccountMapper));
 
 

@@ -1,9 +1,9 @@
-﻿using Domain.Entities;
+﻿using Domain.Entities.Account;
 using System.Threading.Tasks;
 
 namespace Domain.Contracts.UseCases.GetAccountInformation
 {
-    public interface IGetInformationUseCase
+    public interface IGetAccountInformationUseCase
     {
         Task<Account> GetAccountInformationAsync();
     }

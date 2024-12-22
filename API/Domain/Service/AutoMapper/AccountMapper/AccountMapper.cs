@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Domain.DTOs.AccountDTO;
-using Domain.Entities;
+using Domain.Entities.Account;
 
 public class AccountMapper: Profile
 {

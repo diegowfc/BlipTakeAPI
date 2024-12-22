@@ -1,5 +1,4 @@
 ﻿using Domain.Contracts.UseCases.GetAccountInformation;
-using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +7,11 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using System.Text.Json;
 using Newtonsoft.Json;
+using Domain.Entities.Account;
 
 namespace Domain.Service.AccountServices
 {
-    public class AccountService : IGetInformationUseCase
+    public class AccountService : IGetAccountInformationUseCase
     {
         private readonly IHttpClientFactory _httpClientFactory;
 

@@ -10,10 +10,10 @@ namespace BlipTakeAPI.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly IGetInformationUseCase _getInformationUseCase;
+        private readonly IGetAccountInformationUseCase _getInformationUseCase;
         private readonly IMapper _mapper;
 
-        public AccountController(IGetInformationUseCase getInformationUseCase, IMapper mapper)
+        public AccountController(IGetAccountInformationUseCase getInformationUseCase, IMapper mapper)
         {
             _getInformationUseCase = getInformationUseCase;
             _mapper = mapper;
