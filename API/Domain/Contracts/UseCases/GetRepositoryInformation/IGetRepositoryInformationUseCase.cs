@@ -4,6 +4,6 @@ namespace Domain.Contracts.UseCases.GetRepositoryInformation
 {
     public interface IGetRepositoryInformationUseCase
     {
-        Task<Repository> GetRepositoryInformationAsync();
+        Task<List<Repository>> GetRepositoryInformationAsync();
     }
 }

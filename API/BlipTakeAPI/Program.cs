@@ -1,5 +1,7 @@
 using Domain.Contracts.UseCases.GetAccountInformation;
+using Domain.Contracts.UseCases.GetRepositoryInformation;
 using Domain.Service.AccountServices;
+using Domain.Service.RepositoryService;
 
 namespace BlipTakeAPI
 {
@@ -16,7 +18,10 @@ namespace BlipTakeAPI
             builder.Services.AddHttpClient();
 
             builder.Services.AddScoped<IGetAccountInformationUseCase, AccountService>();
+            builder.Services.AddScoped<IGetRepositoryInformationUseCase, RepositoryService>();
+
             builder.Services.AddAutoMapper(typeof(AccountMapper));
+            builder.Services.AddAutoMapper(typeof(RepositoryMapper));
 
 
             var app = builder.Build();

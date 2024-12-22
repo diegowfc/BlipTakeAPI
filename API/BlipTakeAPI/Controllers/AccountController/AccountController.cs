@@ -4,18 +4,18 @@ using Domain.DTOs.AccountDTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BlipTakeAPI.Controllers
+namespace BlipTakeAPI.Controllers.AccountController
 {
     [Route("api/[controller]")]
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly IGetAccountInformationUseCase _getInformationUseCase;
+        private readonly IGetAccountInformationUseCase _getAccountInformationUseCase;
         private readonly IMapper _mapper;
 
-        public AccountController(IGetAccountInformationUseCase getInformationUseCase, IMapper mapper)
+        public AccountController(IGetAccountInformationUseCase getAccountInformationUseCase, IMapper mapper)
         {
-            _getInformationUseCase = getInformationUseCase;
+            _getAccountInformationUseCase = getAccountInformationUseCase;
             _mapper = mapper;
         }
 
@@ -24,7 +24,7 @@ namespace BlipTakeAPI.Controllers
         {
             try
             {
-                var account = await _getInformationUseCase.GetAccountInformationAsync();
+                var account = await _getAccountInformationUseCase.GetAccountInformationAsync();
                 var accountOutputDTO = _mapper.Map<AccountOutputDTO>(account);
                 return Ok(accountOutputDTO);
             }
